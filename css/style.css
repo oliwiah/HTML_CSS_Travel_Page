@@ -1,0 +1,154 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.eot');
+    src: local('Open Sans'), local('OpenSans'),
+    url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans.woff2') format('woff2'),
+    url('../fonts/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans.ttf') format('truetype'),
+    url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header and footer styles */
+
+header, footer {
+    width: 100%;
+}
+header {
+    background-image: url("../imgs/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+    height: 800px;
+    color: white;
+    z-index: -1;
+}
+.menu {
+    height: 80px;
+    margin-bottom: 170px;
+}
+.logo {
+    width: 100px;
+    height: 20px;
+    float: left;
+}
+#header-logo {
+    margin-top: 27px;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+nav li {
+    font-size: 14px;
+    display: inline;
+    margin-left: 25px;
+    height: 80px;
+    line-height: 80px;
+}
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.row {
+    /*border: 1px solid red;  !* używane roboczo *!*/
+}
+#motto-small {
+    font-size: 24px;
+    font-weight: 400;  /* ale 400 to normal, więc zapisuję to tylko na wypadek, gdyby odgórnie wczytać grubszy/cieńszy font, to żeby motto trzymało swoją wagę */
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+#motto-large {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding-right: 35%;
+    padding-bottom: 50px;
+}
+button {
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: rgba(86, 86, 86, 0.75);
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+footer {
+    background-color: black;
+    height: 300px;
+}
+#footer-logo {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.footer-float-left {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    float: left;
+    width: 25%;
+    color: #474747;
+}
+.footer-float-right {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    float: right;
+    width: 25%;
+    color: #353434;
+}
+
+/* layout styles */
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    /*border: 1px solid red;  !* używane roboczo *!*/
+}
+.section-content {
+    height: 500px;
+}
+.content-left {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 175px 50px 175px 0;
+    text-transform: uppercase;
+    float: left;
+    width: 50%;
+    opacity: 0.7;
+}
+.content-right {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #b7b7b7;
+    padding: 125px 0 125px 0;
+    float: right;
+    width: 50%;
+}
+#content-right-up {
+    padding-bottom: 26px;
+}
