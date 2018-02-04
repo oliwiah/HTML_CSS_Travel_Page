@@ -1,2 +1,2 @@
-# HTML_CSS_Travel_Page
-A single page created using HTML and CSS.
+# HTML CSS Travel Page
+A single page website created using HTML and CSS.
