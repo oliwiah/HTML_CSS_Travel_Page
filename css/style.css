@@ -38,7 +38,7 @@ header {
     margin-bottom: 170px;
 }
 .logo {
-    width: 120px;
+    width: 140px;
     height: 20px;
     float: left;
 }
@@ -139,6 +139,7 @@ footer {
     float: left;
     width: 50%;
     opacity: 0.7;
+    text-align: center;
 }
 .content-right {
     font-size: 16px;
